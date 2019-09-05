@@ -3,12 +3,12 @@ import PackageDescription
 
 var targets:[Target] = [
     .target(name: "Antlr4"),
-    .target(name: "SwiftParser", dependencies: [
+    .target(name: "GraphQLParser", dependencies: [
         .target(name: "Antlr4"),
     ]),
     .target(name: "playground", dependencies: [
         .target(name: "Antlr4"),
-        .target(name: "SwiftParser")
+        .target(name: "GraphQLParser")
     ]),
 ]
 
